@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:fitsSystemWindows="true"
+    tools:context=".ImageEditActivity"
+    >
+
+  <com.droidninja.imageeditengine.views.imagezoom.ImageViewTouch
+      android:id="@+id/image_iv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:adjustViewBounds="true"
+      android:scaleType="centerInside"
+      />
+
+  <com.droidninja.imageeditengine.views.PhotoEditorView
+      android:id="@+id/photo_editor_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="visible"
+      />
+
+  <ImageView
+      android:id="@+id/delete_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/selector_delete"
+      android:padding="15dp"
+      android:src="@drawable/ic_cam_delete"
+      android:visibility="gone"
+      tools:ignore="MissingPrefix"
+      />
+
+  <RelativeLayout
+      android:id="@+id/toolbar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      >
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_cam_back"
+        />
+
+
+    <ImageView
+        android:id="@+id/crop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/stickers_btn"
+        android:layout_toStartOf="@+id/stickers_btn"
+        android:padding="8dp"
+        android:src="@drawable/ic_cam_crop_rotate"
+        />
+
+
+    <ImageView
+        android:id="@+id/stickers_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/add_text_btn"
+        android:layout_toStartOf="@+id/add_text_btn"
+        android:padding="8dp"
+        android:src="@drawable/ic_cam_sticker"
+        />
+
+
+    <ImageView
+        android:id="@+id/add_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/paint_btn"
+        android:layout_toStartOf="@+id/paint_btn"
+        android:padding="8dp"
+        android:src="@drawable/ic_cam_text"
+        />
+
+    <ImageView
+        android:id="@+id/paint_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_cam_draw"
+        />
+
+    <com.droidninja.imageeditengine.views.VerticalSlideColorPicker
+        android:id="@+id/color_picker_view"
+        android:layout_width="10dp"
+        android:layout_height="180dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/paint_btn"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        app:defaultColor="@color/checkbox_color"
+        />
+
+
+  </RelativeLayout>
+
+
+  <TextView
+      android:id="@+id/filter_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/filter_list_layout"
+      android:layout_centerHorizontal="true"
+      android:drawableTop="@drawable/ic_arrow_up"
+      android:shadowColor="@color/blackish"
+      android:shadowDx="-1"
+      android:shadowDy="-1"
+      android:shadowRadius="1"
+      android:text="Filters"
+      android:textColor="@color/white"
+      />
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/done_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_margin="@dimen/done_btn_margin"
+      app:srcCompat="@drawable/ic_done"
+      />
+
+  <RelativeLayout
+      android:id="@+id/filter_list_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@color/blackish"
+      android:orientation="horizontal"
+      android:visibility="visible"
+      >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/filter_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_filter_layout"
+        />
+  </RelativeLayout>
+
+</RelativeLayout>

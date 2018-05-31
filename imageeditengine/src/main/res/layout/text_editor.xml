@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.droidninja.imageeditengine.views.AutofitTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:textColor="@android:color/black"
+    android:textSize="50sp"
+    android:textStyle="bold"
+    app:autoSizeMaxTextSize="50sp"
+    autofit:minTextSize="10sp"
+    autofit:sizeToFit="true"
+    tools:text="Hello World"
+    />
+

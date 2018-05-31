@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <FrameLayout
+      android:id="@+id/container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:animateLayoutChanges="true"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+      >
+
+    <ImageView
+        android:id="@+id/filter_iv"
+        android:layout_width="64dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@color/gray"
+        />
+
+    <ImageView
+        android:id="@+id/check_box"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/stroked_circle"
+        app:srcCompat="@drawable/ic_done"
+        android:padding="3dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="right|end"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@color/transparent_black"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="None"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+
+  </FrameLayout>
+
+</RelativeLayout>
