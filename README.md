@@ -12,7 +12,7 @@ There are many things on which work needs to be done.
    ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-163754.png?raw=true)
    ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164258.png?raw=true)
    ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164411.png?raw=true)
-   ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164501.pngraw=true)
+   ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164501.png?raw=true)
 
 # Usage
 ```kotlin
