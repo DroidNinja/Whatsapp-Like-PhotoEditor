@@ -7,8 +7,14 @@ There are many things on which work needs to be done.
  * Remove ugly code
  * Convert code to kotlin
  * Publish on maven
+ 
+ ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164109.png?raw=true)
+   ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-163754.png?raw=true)
+   ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164258.png?raw=true)
+   ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164411.png?raw=true)
+   ![demo](https://github.com/DroidNinja/Whatsapp-Like-PhotoEditor/blob/master/screens/device-2018-05-31-164501.pngraw=true)
 
-#Usage
+# Usage
 ```kotlin
  ImageEditor.Builder(this, imagePath)
                 .setStickerAssets("stickers")
@@ -32,7 +38,7 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
   }
 ```
 
-#Projects that helped a lot
+# Projects that helped
   [ImageEditor-Android](https://github.com/siwangqishiq/ImageEditor-Android/)
   
   [Android-Image-Cropper](https://github.com/ArthurHub/Android-Image-Cropper)
